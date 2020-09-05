@@ -73,10 +73,10 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == 'embed') {
+  if(message.content == '도움말') {
     let img = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let embed = new Discord.RichEmbed()
-      .setTitle('테스트 봇')
+      .setTitle('NDS 봇')
       .setThumbnail(img)
       .addBlankField()
       .addField('안녕하세요', '테스트 봇입니다.')
