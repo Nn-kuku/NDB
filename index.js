@@ -65,10 +65,6 @@ client.login(token);
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == 'ping') {
-    return message.reply('pong');
-  }
-
   if(message.content == '미사용') {
     let img = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let embed = new Discord.RichEmbed()
