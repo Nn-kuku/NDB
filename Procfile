@@ -1,1 +1,1 @@
-worker: npm run nn
+worker: node index.js
