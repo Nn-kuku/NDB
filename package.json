@@ -1,0 +1,12 @@
+{
+  "name": "nntest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nn": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
