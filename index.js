@@ -84,7 +84,7 @@ client.on('message', (message) => {
   } else if(message.content == '도움말') {
     let helpImg = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let commandList = [
-      {name: 'ping', desc: '쿠쿠루핑크퐁'},
+      {name: '', desc: '쿠쿠루핑크퐁'},
       {name: 'embed', desc: 'embed 예제1'},
       {name: 'embed2', desc: 'embed 예제2 (help)'},
       {name: '전체공지', desc: 'dm으로 전체 공지 보내기'},
@@ -120,4 +120,28 @@ function changeCommandStringLength(str, limitLen = 8) {
 
 client.login(token);
 
-//
+//내꺼
+
+client.on('message', (message) => {
+  if (message.content === '마크') {
+  message.channel.send('Nn_kuku, kuku15963');
+  }
+});
+
+client.login(token);
+
+client.on('message', (message) => {
+  if (message.content === '%디코') {
+  message.channel.send('Nn_kuku#4251');
+  }
+});
+
+client.login(token);
+
+client.on('message', (message) => {
+  if (message.content === '%제작자') {
+  message.channel.send('Ab(에이비)');
+  }
+});
+
+client.login(token);
