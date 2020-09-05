@@ -73,7 +73,7 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == '도움말') {
+  if(message.content == '%도움말') {
     let img = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let embed = new Discord.RichEmbed()
       .setTitle('NDS 봇')
@@ -89,7 +89,7 @@ client.on('message', (message) => {
       .setFooter('Nn_kuku', img)
 
     message.channel.send(embed)
-  } else if(message.content == 'embed2') {
+  } else if(message.content == '%도움말2') {
     let helpImg = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let commandList = [
       {name: 'ping', desc: '쿠쿠루핑크퐁'},
