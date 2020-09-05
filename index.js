@@ -37,10 +37,10 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content.startsWith('전체공지')) {
+  if(message.content.startsWith('!전체공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('전체공지'.length);
+      let contents = message.content.slice('!전체공지'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
         x.user.send(`<@${message.author.id}> ${contents}`);
