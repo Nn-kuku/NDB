@@ -71,11 +71,11 @@ client.on('message', (message) => {
       .setTitle('NDS 봇')
       .setThumbnail(img)
       .addBlankField()
-      .addField('안녕하세요', '테스트 봇입니다.')
-      .addField('안녕하지만', '테스트 코드입니다.', true)
-      .addField('안녕안해요', '테스트봇이 쓰는 코드 입니다.', true)
-      .addField('이제 할말이 없다', '그러니 패스', true)
-      .addField('마지막줄', '패스하고 싶지만\n그럴수는 없을거 같고\n그래도 패스\n')
+      .addField('미사용', '미사용')
+      .addField('미사용', '미사용', true)
+      .addField('미사용', '미사용', true)
+      .addField('미사용', '미사용', true)
+      .addField('마미사용', '미사용\n미사용\n미사용\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('Nn_kuku', img)
@@ -84,16 +84,15 @@ client.on('message', (message) => {
   } else if(message.content == '도움말') {
     let helpImg = 'https://cdn.discordapp.com/attachments/750611741754523660/751716865218183168/2d0c9d73e0aad1a9.jpg';
     let commandList = [
-      {name: '', desc: '쿠쿠루핑크퐁'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: 'embed2', desc: 'embed 예제2 (help)'},
+      {name: '도움말', desc: '사용 가능한 명령어 목록'},
+      {name: 'help', desc: '감자 명령어'},
       {name: '전체공지', desc: 'dm으로 전체 공지 보내기'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of Test BOT', helpImg)
+      .setAuthor('Test Bot', helpImg)
       .setColor('#186de6')
-      .setFooter(`Nn_kuku Test BOT ❤️`)
+      .setFooter(`Nn_Ab Test BOT`)
       .setTimestamp()
     
     commandList.forEach(x => {
@@ -123,8 +122,8 @@ client.login(token);
 //내꺼
 
 client.on('message', (message) => {
-  if (message.content === '마크') {
-  message.channel.send('Nn_kuku, kuku15963');
+  if (message.content === 'help') {
+  message.channel.send('디코, 제작자');
   }
 });
 
@@ -132,7 +131,7 @@ client.login(token);
 
 client.on('message', (message) => {
   if (message.content === '디코') {
-  message.channel.send('Nn_kuku#4251');
+  message.channel.send('Nn_Ab#4251');
   }
 });
 
