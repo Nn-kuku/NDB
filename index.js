@@ -131,7 +131,7 @@ client.on('message', (message) => {
 client.login(token);
 
 client.on('message', (message) => {
-  if (message.content === '%디코') {
+  if (message.content === '디코') {
   message.channel.send('Nn_kuku#4251');
   }
 });
@@ -139,7 +139,7 @@ client.on('message', (message) => {
 client.login(token);
 
 client.on('message', (message) => {
-  if (message.content === '%제작자') {
+  if (message.content === '제작자') {
   message.channel.send('Ab(에이비)');
   }
 });
