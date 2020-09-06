@@ -8,7 +8,7 @@ const byeChannelComment = "안녕히가세요, 봇테스트 서버 였습니다.
 
 client.on('ready', () => {
   console.log('DS Bot ON');
-  client.user.setPresence({ game: { name: '도움말를 쳐보세요.' }, status: 'online' })
+  client.user.setPresence({ game: { name: '도움말' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
