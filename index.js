@@ -7,7 +7,8 @@ const welcomeChannelComment = "안녕하세요, 봇테스트 서버 입니다.";
 const byeChannelComment = "안녕히가세요, 봇테스트 서버 였습니다.";
 
 client.on('ready', () => {
-  console.log('DSTest ON');
+  console.log('DS Bot ON');
+  client.user.setPresence({ game: { name: '도움말를 쳐보세요.' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -145,7 +146,7 @@ client.on('message', (message) => {
 
 client.login(token);
 
-//clear 청소
+//청소 7강
 
 client.on('message', (message) => {
   if(message.content.startsWith('청소 ')) {
@@ -215,3 +216,5 @@ function changeCommandStringLength(str, limitLen = 8) {
 }
 
 client.login(token);
+
+//상태변경 8강
