@@ -224,3 +224,5 @@ if(message.content.startsWith('인증번호')) {
   let max = 99999;
   let dice_num = parseInt(Math.random() * (max - min) + min);
   message.channel.send(`인증번호:__${dice_num}__ 10분 이내에 입력해주세요!` )}
+
+  
